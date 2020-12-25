@@ -1,0 +1,58 @@
+.reviews
+    background-color: $bg-secondary
+    &-slider
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap //убоать при слайдере
+        &__item
+            text-align: center
+        &__image
+            display: block
+            width: 75px
+            height: 75px
+            border: 2px solid $border-color
+            border-radius: 60%
+            margin: 20px auto
+        &__text
+            position: relative
+            font-size: 15px
+            font-style: italic
+            max-width: 370px
+            padding: 20px
+            margin-bottom: 30px
+            background-color: #ffffff
+            border-radius: 12px
+            &::after
+                content: ''
+                position: absolute
+                bottom: -30px
+                left: 50%
+                transform: translateX(-50%)
+                height: 10px
+                border: 10px solid transparent
+                border-top: 10px solid #ffffff
+
+//убрать при слайдере
+@media (max-width: 1199px)
+    .reviews
+        &-slider
+            &__text
+                flex-basis: 33%
+            &__item
+                flex-basis: 33%
+@media (max-width: 991px)
+    .reviews
+        &-slider
+            &__text
+                flex-basis: 33%
+            &__item
+                flex-basis: 33%
+@media (max-width: 768px)
+    .reviews
+        width: 100%
+        &-slider
+            &__text
+                margin: auto
+            &__item
+                flex-basis: 100%
+                margin-bottom: 50px

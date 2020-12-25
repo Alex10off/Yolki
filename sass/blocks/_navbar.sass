@@ -1,0 +1,104 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #ebebeb
+    z-index: 99
+    &-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        //min-height: 80px
+        //border: 2px solid
+    &__menu-button
+        margin-right: 30px
+    &__mobile, &__landline
+        text-align: right
+    &__phone
+        display: block
+        margin-bottom: 5px
+        font-size: 19px
+        text-decoration: none
+        color: $text-color
+        +bold
+    &__small-text
+        display: block
+        font-style: 14px
+        color: $text-color-secondary
+        text-decoration: none
+.menu
+    position: fixed
+    z-index: 2
+    top: 80px
+    left: 0
+    width: 100%
+    background-color: $color-accent
+    transition: 0.2s
+    transform: translateY(-200%)
+    opacity: 0
+    &_active
+        transform: translateY(0)
+        opacity: 1
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 16px 0
+    &__link
+        text-decoration: none
+        font-size: 17px
+        text-transform: uppercase
+        color: #ffffff
+    &-button
+        display: flex
+        flex-direction: column
+        background-color: transparent
+        align-items: center
+        justify-content: center
+        border: none
+        height: 80px
+        width: 70px
+        &_active
+
+        &:hover
+            cursor: pointer
+        &:focus
+            outline: none
+        &__line
+            display: block
+            width: 20px
+            height: 3px
+            background-color: $color-accent
+            margin: 2px
+.logo
+    &__text
+        display: block
+        margin-bottom: 5px
+        font-size: 18px
+        text-transform: uppercase
+        +bold
+    &__description
+        display: block
+        font-size: 14px
+        color: $text-color-secondary
+
+@media (max-width: 991px)
+    .navbar
+        &__mobile, &__landline
+            display: none
+@media (max-width: 576px)
+    .logo
+        display: none
+        //background: #ebebeb url('../img/ico/png/006-christmas-tree.png') no-repeat center
+        //&__text, &__description
+            //text-transform: none
+            //color: transparent
+    .menu
+        top: 80px
+        &-button
+            height: 80px
+        &__nav
+            flex-direction: column
+        &__link
+            margin-bottom: 15px

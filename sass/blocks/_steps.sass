@@ -1,0 +1,42 @@
+.step
+    position: relative
+    text-align: center
+    &__title
+        font-size: 18px
+    &:last-child
+        &:before
+            display: none
+    &:before
+        display: block
+        position: absolute
+        top: 15%
+        right: -130%
+        content: ''
+        width: 150%
+        height: 2px
+        background-color: $text-color-secondary
+        opacity: 0.7
+    &__text
+        max-width: 160px
+        margin: auto
+        margin-bottom: 30px
+    &s
+        &-block
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+@media (max-width: 1199px)
+    .step
+        &::before
+            width: 100%
+            right: -85%
+@media (max-width: 991px)
+    .step
+        &::before
+            width: 60%
+            right: -45%
+@media (max-width: 768px)
+    .step
+        width: 100%
+        &::before
+            display: none

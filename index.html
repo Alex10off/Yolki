@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:local" content="ru_RU">
+    <meta property="og:type" content="Магазин недорогих товаров">
+    <meta property="og:description" content="Тут вы можете выгодно заказать себе что-нибудь хорошее">
+    <meta property="og:image" content="https://alex10off.github.io/Yolky/img/HeaderWiteGreen.jpg">
+    <meta property="og:url" content="https://alex10off.github.io/Yolky/">
+    <meta property="og:site_name" content="Salesman">
+    <link rel="image_src" href="https://alex10off.github.io/Yolky/img/HeaderWiteGreen.jpg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Salesman</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="menu">
+            <div class="container">
+                <nav class="menu__nav">
+                    <a href="#hero" class="menu__link flag">Главная</a>
+                    <a href="#features" class="menu__link flag">Приемущества</a>
+                    <a href="#price" class="menu__link flag">Каталог</a>
+                    <a href="#steps" class="menu__link flag">Как мы работаем</a>
+                    <a href="#reviews" class="menu__link flag">Отзывы</a>
+                    <a href="#contacts" class="menu__link flag">Контакты</a>
+                    <a href="#questions" class="menu__link flag">Остались вопросы?</a>
+                </nav>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <button class="menu-button navbar__menu-button">
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                    </button>
+
+                    <div class="logo navbar__logo">
+                        <strong class="logo__text">Исскуственные ёлки</strong>
+                        <span class="logo__description">честная доставка</span>
+                    </div>
+
+                    <div class="navbar__mobile">
+                        <a class="navbar__phone" href="tel:+79991234567">+7 999 123-45-67</a>
+                        <span class="navbar__work-time navbar__small-text">без выходных 9-20</span>
+                    </div>
+
+                    <div class="navbar__landline">
+                        <a class="navbar__phone" href="tel:+76341234567">+7 634 123-45-67</a>
+                        <a class="navbar__email navbar__small-text" href="bbb@mail.ru">bbb@mail.ru</a>
+                    </div>
+                    <a href="#contacts" class="button-o navbar__button flag">получить консультацию</a>
+                </div>            
+            </div>
+            
+        </div>
+        <div class="hero" id="hero">
+            <div class="container">
+                <h1 class="hero__title">
+                    Гарантия <br>минимальной цены <br>на ёлки 
+                </h1>
+                <span class="hero__subtitle">от 1500 рублей</span>
+                <a href="#price" class="button hero__button flag">Заказать ёлку</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="offer bg-secondary" >
+            <div class="container">
+                <div class="offer__block offer-block">
+                    <h2 class="offer__title">Оставте заявку</h2>
+                    <span class="offer__subtitle">И получите скидку</span>
+                    <form method="POST" action="#" class="form offer__form">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="" class="form__label">Имя товара</label>
+                                <input type="hidden" name="type" id="select-type" value="Наиминование1">
+                                <div class="select form_select">
+                                    <div class="select_checked">Наиминование1</div>
+                                    <ul class="select__dropdown">
+                                        <li class="select__option" data-value="Наиминование1">Наиминование1</li>
+                                        <li class="select__option" data-value="Наиминование2">Наиминование2</li>
+                                        <li class="select__option" data-value="Наиминование3">Наиминование3</li>
+                                        <li class="select__option" data-value="Наиминование4">Наиминование4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row form__row-checkbox">
+                            <div class="form__checkbox">
+                                <input class="checkbox" type="radio" name="city" id="taganrog" value="Taganrog" checked>
+                                <label class="checkbox-label" for="taganrog">
+                                    Таганрог
+                                </label>                                
+                            </div>
+                            <div class="form__checkbox">
+                                <input class="checkbox" type="radio" name="city" id="rostov" value="Rostov">
+                                <label class="checkbox-label" for="rostov">
+                                    Ростов-на-Дону
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <input type="text" class="form__input input" placeholder="Ваше Имя">
+                            </div>
+                            <div class="form__group">
+                                <input type="tel" class="form__input input" placeholder="Ваш Телефон">
+                            </div>
+                            <div class="form__group">
+                                <input type="submit" class="button form__button" value="Получить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section" id="features">
+            <div class="container">
+                <h2 class="section-title section__title">
+                    Приемущества
+                </h2>
+                <div class="features-block">
+                    <div class="features-block__item">
+                        <img src="img/feature/forest.png" alt="Не рубим деревья" class="feature-block__image">
+                        <p class="features-block__text">Не рубим деревья</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/feature/economy.png" alt="Долгосрочная экономия" class="feature-block__image">
+                        <p class="features-block__text">Долгосрочная экономия</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/feature/special_price.png" alt="минимальная цена" class="feature-block__image">
+                        <p class="features-block__text">Минимальная цена</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/feature/interior.png" alt="Легко впишется в любой интерьер" class="feature-block__image">
+                        <p class="features-block__text">Легко впишется в любой интерьер</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/feature/vacuum-cleane.png" alt="Не требует большой уборки" class="feature-block__image">
+                        <p class="features-block__text">Не требует большой уборки</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/feature/allergy.png" alt="Не аллергенные метериалы" class="feature-block__image">
+                        <p class="features-block__text">Гипоаллергенные метериалы</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section price" id="price">
+            <div class="container catalog">
+                <h2 class="section-title section__title">Каталог ёлок</h2>
+
+                <div class="price-block">
+                    <div class="price-card price-block__card product">
+                        <a href="https://vk.com/desyato" class="price-card__link">
+                            Подробнее в VK
+                        </a>
+                        <div class="price-card__image">
+                            <img class="product__img" src="img/price/price-1.jpg" alt="Товар">
+                        </div>
+                        <div class="price-card__text">
+                            <div class="price-card__pricetag">
+                                <h4 class="price-card__title">Наиминование1</h4>
+                                <span class="price-card__cost">1500р.</span>
+                            </div>
+                            <div class="price-card__button">
+                                <button class="button product__btn" data-popup="popup-order">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card price-block__card product">
+                        <a href="https://vk.com/" class="price-card__link">
+                            Подробнее в VK
+                        </a>
+                        <div class="price-card__image">
+                            <img class="product__img" src="img/price/price-2.jpg" alt="Товар">
+                        </div>
+                        <div class="price-card__text">
+                            <div class="price-card__pricetag">
+                                <h4 class="price-card__title">Наиминование2</h4>
+                                <span class="price-card__cost">1500р.</span>
+                            </div>
+                            <div class="price-card__button">
+                                <button class="button product__btn" data-popup="popup-order">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="price-card price-block__card product">
+                        <a href="https://vk.com/" class="price-card__link">
+                            Подробнее в VK
+                        </a>    
+                        <div class="price-card__image">
+                            <img class="product__img" src="img/price/price-3.jpg" alt="Товар">
+                        </div>
+                        <div class="price-card__text">
+                            <div class="price-card__pricetag">
+                                <h4 class="price-card__title">Наиминование3</h4>
+                                <span class="price-card__cost">1500р.</span>
+                            </div>
+                            <div class="price-card__button">
+                                <button class="button product__btn" data-popup="popup-order">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card price-block__card product">
+                        <a href="https://vk.com/" class="price-card__link">
+                            Подробнее в VK
+                        </a>    
+                        <div class="price-card__image">
+                            <img class="product__img" src="img/price/price-4.jpg" alt="Товар">
+                        </div>
+                        <div class="price-card__text">
+                            <div class="price-card__pricetag">
+                                <h4 class="price-card__title">Наиминование4</h4>
+                                <span class="price-card__cost">1499р.</span>
+                            </div>
+                            <div class="price-card__button">
+                                <button class="button product__btn" data-popup="popup-order">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="price-card price-block__card product">
+                        <a href="https://vk.com/" class="price-card__link">
+                            Подробнее в VK
+                        </a>
+                        <div class="price-card__image">
+                            <img class="product__img" src="img/price/price-1.jpg" alt="Товар">
+                        </div>
+                        <div class="price-card__text">
+                            <div class="price-card__pricetag">
+                                <h4 class="price-card__title">Наиминование5</h4>
+                                <span class="price-card__cost">1499р.</span>
+                            </div>
+                            <div class="price-card__button">
+                                <button class="button product__btn" data-popup="popup-order">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card price-block__card product">
+                        <a href="https://vk.com/" class="price-card__link">
+                            Подробнее в VK
+                        </a>
+                        <div class="price-card__image">
+                            <img class="product__img" src="img/price/price-2.jpg" alt="Товар">
+                        </div>
+                        <div class="price-card__text">
+                            <div class="price-card__pricetag">
+                                <h4 class="price-card__title">Наиминование6</h4>
+                                <span class="price-card__cost">1499р.</span>
+                            </div>
+                            <div class="price-card__button">
+                                <button class="button product__btn" data-popup="popup-order">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card price-block__card product">
+                        <a href="https://vk.com/" class="price-card__link">
+                            Подробнее в VK
+                        </a>
+                        <div class="price-card__image">
+                            <img class="product__img" src="img/price/price-3.jpg" alt="Товар">
+                        </div>
+                        <div class="price-card__text">
+                            <div class="price-card__pricetag">
+                                <h4 class="price-card__title">Наиминование7</h4>
+                                <span class="price-card__cost">1050р.</span>
+                            </div>
+                            <div class="price-card__button">
+                                <button class="button product__btn" data-popup="popup-order">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-card price-block__card product">
+                        <a href="https://vk.com/" class="price-card__link">
+                            Подробнее в VK
+                        </a>
+                        <div class="price-card__image">
+                            <img class="product__img" src="img/price/price-4.jpg" alt="Товар">
+                        </div>
+                        <div class="price-card__text">
+                            <div class="price-card__pricetag">
+                                <h4 class="price-card__title">Наиминование8</h4>
+                                <span class="price-card__cost">2000р.</span>
+                            </div>
+                            <div class="price-card__button">
+                                <button class="button product__btn" data-popup="popup-order">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section steps" id="steps">
+            <div class="container">
+                <h2 class="section-title section__title">
+                    Как мы работаем
+                </h2>
+                <div class="steps-block">
+                    <div class="step">
+                        <img src="img/steps/step-1.png" alt="" class="step__image">
+                        <h4 class="step__title">Заявка</h4>
+                        <p class="step__text">Вы подаёте заявку любым способом, который вам удобнее</p>
+                    </div>
+                    <div class="step">
+                        <img src="img/steps/step-2.png" alt="" class="step__image">
+                        <h4 class="step__title">Связь</h4>
+                        <p class="step__text">Мы связываемся с Вами, отвечаем на ваши вопросы</p>
+                    </div>
+                    <div class="step">
+                        <img src="img/steps/step-3.png" alt="" class="step__image">
+                        <h4 class="step__title">Оплата</h4>
+                        <p class="step__text">Производится оплата</p>
+                    </div>
+                    <div class="step">
+                        <img src="img/steps/step-4.png" alt="" class="step__image">
+                        <h4 class="step__title">Заказ</h4>
+                        <p class="step__text">Мы отсылаем Вам трек-номер, по которому Вы можете отследить вашу покупку</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title section__title">
+                    Отзывы клиентов
+                </h2>
+                <div class="reviews-slider">
+                    <div class="reviews-slider__item">
+                        <div class="reviews-slider__text">
+                            Всё очень хорошо. Не дорого, качественно. Всё приехало быстро и без проблем. блабалабла =)
+                        </div>
+                        <img src="img/reviews/review-1.png" alt="" class="reviews-slider__image">
+                        <span class="reviews-slider__name">
+                            Наталья Иванова <br>Ростов-на-Дону
+                        </span>
+                    </div>
+                    
+                    <div class="reviews-slider__item">
+                        <div class="reviews-slider__text">
+                            Всё очень хорошо. Не дорого, качественно. Всё приехало быстро и без проблем. блабалабла =)
+                        </div>
+                        <img src="img/reviews/review-2.png" alt="" class="reviews-slider__image">
+                        <span class="reviews-slider__name">
+                            Наталья Иванова <br>Ростов-на-Дону
+                        </span>
+                    </div>
+
+                    <div class="reviews-slider__item">
+                        <div class="reviews-slider__text">
+                            Всё очень хорошо. Не дорого, качественно. Всё приехало быстро и без проблем. блабалабла =)
+                        </div>
+                        <img src="img/reviews/review-3.png" alt="" class="reviews-slider__image">
+                        <span class="reviews-slider__name">
+                            Наталья Иванова <br>Ростов-на-Дону
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contacts" id="contacts">
+            <div class="container">
+                <h2 class="section-title section__title">
+                    Контакты
+                </h2>
+                <div class="contacts-block">
+                    <div class="contacts-block__item">
+                        <img src="img/contacts/phone.png" alt="" class="contacts__image">
+                        <div class="contacts__text">
+                            <a href="#" class="contacts__link">+7 999 123-45-67
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts-block__item">
+                        <img src="img/contacts/map.png" alt="" class="contacts__image">
+                        <div class="contacts__text">
+                            <address class="contacts__address">Тридевятое царство, д. 12, кв. 13</address>
+                        </div>
+                    </div>
+                    <div class="contacts-block__item">
+                        <img src="img/contacts/messag.png" alt="" class="contacts__image">
+                        <div class="contacts__text">
+                            <a href="#" class="contacts__link">bbb@mail.ru
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section questions" id="questions">
+            <div class="container">
+                <div class="questions-block">
+                    <h3 class="questions__title">Остались вопросы?</h3>
+                    <a href="#" class="questions__link">Задайте их мне</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer__description">
+                    <h4 class="footer__title">Исскуственные ёлки</h4>
+                    <span class="footer__subtitle">Честная доставка</span>
+                    <span class="footer__copy">@Salesman</span>
+                </div>
+                <div class="footer__pay-info">
+                    <img class="footer__pay-logo" src="img/footer/Visa.png" alt="Visa">
+                    <img class="footer__pay-logo" src="img/footer/MasterCard.png" alt="MasterCard">
+                    <img class="footer__pay-logo" src="img/footer/Yandex.png" alt="YandexMany">
+                </div>
+                <div class="footer__contacts">
+                    <a href="#" class="footer__phone">+7 999 123-45-67</a>
+                    <a href="#" class="footer__mail">bbb@mail.ru</a>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social__link">
+                            <img src="img/social/vk.png" alt="VK">
+                        </a>
+                        <a href="#" class="footer-social__link">
+                            <img src="img/social/telegram.png" alt="telegram">
+                        </a>
+                        <a href="#" class="footer-social__link">
+                            <img src="img/social/Twitter.png" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup popup-order">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="btn-close popup__btn-close"></button>
+                    <h2 class="section-title section__title popup__title">Заполните форму</h2>
+                    <p class="popup__subtitle">Доставка</p>
+                    <div class="order">
+                        <img class="order__img" src="img/price/price-1.jpg" alt="">
+                        <h3 class="order__title">
+                            <span class="order-product-title">Наиминование1</span>
+                            <span class="order-product-price">1500</span> &#8381;
+                        </h3>
+                        <p class="order__size">1.5m</p>
+                        <form action="" class="forma">
+                            <input class="order-info-title" type="hidden" name="ёлка">
+                            <input class="order-info-price" type="hidden" name="цена">
+                            <!--<input type="hidden" name="размер">-->
+                            <input class="forma__input" type="text" name="имя" placeholder="Имя" required>
+                            <input class="forma__input" type="tel" name="Телефон" placeholder="Телефон" required>
+                            <input class="forma__input" type="text" name="Адрес" placeholder="Адрес" required>
+                            <select class="forma__input" name="оплата" id="">
+                                <option value="Оплата наличными">Оплата наличными</option>
+                                <option value="Оплата картой">Оплата картой</option>
+                            </select>
+                            <button class="button forma__btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-thanks">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="btn-close popup__btn-close"></button>
+                    <h2 class="section-title section__title popup__title">Успешно отправленно</h2>
+                    <p class="popup__subtitle--thanks">Скоро Вам придёт треккер-номер доставки</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="popup popup-error">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="btn-close popup__btn-close"></button>
+                    <h2 class="section-title section__title popup__title">Произошла ошибка</h2>
+                    <p class="popup__subtitle--thanks">Пожалуйста! Сделайте заказ по номеру <a class="popup__link" href="tel:+7 999 123-45-67">+7 999 123-45-67</a></p> <br>
+                    <p class="popup__subtitle--thanks">Или воспользуйтесь кнопкой в правом нижнем углу</p>
+                </div>
+            </div>
+        </div>
+    </div>           
+<!--Подключение виджета Spikmi-->
+<script type="text/javascript" src="https://spikmi.com/Widget?Id=4499"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/myLib.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>

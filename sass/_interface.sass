@@ -1,0 +1,178 @@
+body
+    color: $text-color
+    +light
+.section
+    padding: 100px 0
+    &-title
+        font-size: 30px
+        text-align: center
+        text-transform: uppercase
+        +bold
+    &__title
+        margin-bottom: 100px
+        color: $color-accent
+.button-o
+    border: 2px solid $color-accent
+    padding: 17px 22px
+    background: transparent
+    font-size: 12px
+    text-transform: uppercase
+    color: $color-accent
+    +bold
+.button
+    border: none
+    text-transform: uppercase
+    padding: 25px 45px
+    background-color: $color-accent
+    color: #ffffff
+    +bold
+    &:hover
+        cursor: pointer
+.bg-secondary
+    background: $bg-secondary
+.input
+    height: 80px
+    padding-left: 30px
+    border: 1px solid #dddddd
+input[type="radio"]
+    display: none
+    &:checked + label:before
+        background-color: $color-accent
+.select
+    position: relative
+    height: 80px
+    width: 100%
+    background-color: #ffffff
+    border: 1px solid #dddddd
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 20px
+        transform: translateY(-50%)
+        width: 20px
+        height: 20px
+        background: url('../img/down.png') no-repeat center
+    &:hover
+        cursor: pointer
+    &_checked
+        line-height: 80px
+        padding-left: 30px
+    &__dropdown
+        position: absolute
+        top: 80px
+        width: 100%
+        background-color: #ffffff
+        border: 1px solid #dddddd
+        margin: 0
+        list-style: none
+        padding: 0
+        display: none
+        &_open
+            display: block
+    &__option
+        padding: 10px
+        &:hover
+            background-color: $bg-secondary
+.checkbox
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 42px
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            width: 30px
+            height: 30px
+            border: 1px solid #000000
+            margin-right: 20px
+.btn-close
+    display: inline-block
+    background: none
+    position: relative
+    border: none
+    cursor: pointer
+    padding: 0
+    width: 50px
+    height: 50px
+    transition: transform 0.2s opacity 0.2s
+    &:hover
+        transform: scale(1.1)
+    &:active
+        transform: scale(0.9)
+        opacity: 0.8
+    &::before
+        content: ''
+        background: #d2d2d2
+        height: 40px
+        width: 3px
+        position: absolute
+        border-radius: 10px
+        top: 50%
+        transform: translateY(-50%)
+    &::after
+        content: ''
+        background: #d2d2d2
+        height: 40px
+        width: 3px
+        position: absolute
+        border-radius: 10px
+        top: 50%
+        transform: translateY(-50%)
+.btn-close
+    &::before
+        transform: translateY(-50%) rotate(45deg)
+    &::after
+        transform: translateY(-50%) rotate(-45deg)
+.order
+    max-width: 310px
+    margin: 0 auto
+    &__img
+        display: block
+        width: 186px
+        margin: 0 auto 10px
+    &__title
+        margin: 0 0 5px
+        text-align: center
+        +bold
+    &__size
+        margin: 0 0 30px
+        font-weight: 900
+        text-align: center
+        margin: 0 auto 30px
+.forma
+    &__input
+        display: block
+        width: 100%
+        padding: 20px 20px
+        background: $bg-secondary
+        margin-bottom: 2px
+        border: 2px solid transparent
+        outline: none
+        &:focus
+            border-color: $color-accent
+    &__btn
+        box-shadow: none
+        width: 100%
+
+@media (max-width: 991px)
+    .button
+        padding: 15px 35px
+@media (max-width: 576px)
+    .button-o
+        font-size: 10px
+        padding: 14px 19px
+    .checkbox
+        &-label
+            margin-right: 20px
+            &:before
+                content: ''
+                width: 20px
+                height: 20px
+                border: 1px solid #000000
+                margin-right: 10px
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 24px
